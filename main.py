@@ -84,10 +84,10 @@ def send_summary():
 def main():
     # 스케줄링 부분 주석 처리
     # 서버에 실행해 두면 매일 오후 6시에 summary 전송
-    # schedule.every().day.at("18:00").do(send_summary)
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(60)
+    schedule.every().day.at("18:00").do(send_summary)
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
     
     # 즉시 실행
     print("대화 요약을 시작합니다...")
