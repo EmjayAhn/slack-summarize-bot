@@ -20,6 +20,9 @@ uv sync
    - 앱을 워크스페이스에 설치
 
 3. 환경 변수 설정:
+  ```
+  cp .env.sample .env
+  ```
    - `.env` 파일을 생성하고 다음 변수들을 설정:
      ```
      SLACK_BOT_TOKEN=xoxb-your-bot-token
